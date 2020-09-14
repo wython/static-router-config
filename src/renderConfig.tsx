@@ -5,7 +5,7 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-type RouteConfigItem = {
+export type RouteConfigItem = {
   title: string,
   path: string,
   disabled: boolean,
@@ -15,13 +15,13 @@ type RouteConfigItem = {
   extend?: any
 }
 
-type RouteConfigs = Array<RouteConfigItem>
+export type RouteConfigs = Array<RouteConfigItem>
 
-type PropsType = {
+export type PropsType = {
   routes: RouteConfigs
 }
 
-type BaseProps = {
+export type BaseProps = {
   routeItem: RouteConfigItem
 }
 export const RenderConfig: SFC<PropsType> = (props: PropsType) => {
