@@ -12,6 +12,10 @@
   "browser": "dist/static-router-config.umd.js",
   "author": "wython",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wython/static-router-config.git"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
