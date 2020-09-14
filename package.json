@@ -1,6 +1,6 @@
 {
   "name": "static-router-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A static router help for dynamic router like react-router@4",
   "scripts": {
     "dev": "rollup -c -w",
