@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "dist/static-router-config.cjs.js",
+  "types": "dist/index.d.ts",
   "module": "dist/static-router-config.esm.js",
   "browser": "dist/static-router-config.umd.js",
   "author": "wython",
