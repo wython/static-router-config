@@ -5,25 +5,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-export type RouteConfigItem = {
-  title: string,
-  path: string,
-  disabled: boolean,
-  component?: ComponentType,
-  children: RouteConfigs
-  exact?: boolean,
-  extend?: any
-}
+import { PropsType, BaseProps }  from './index'
 
-export type RouteConfigs = Array<RouteConfigItem>
-
-export type PropsType = {
-  routes: RouteConfigs
-}
-
-export type BaseProps = {
-  routeItem: RouteConfigItem
-}
 export const RenderConfig: SFC<PropsType> = (props: PropsType) => {
   const { routes } = props
   const list = routes.map(route => {
