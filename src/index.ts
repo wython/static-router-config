@@ -1,0 +1,1 @@
+export { RenderConfig } from './renderConfig'
