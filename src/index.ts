@@ -1,18 +1,18 @@
 import {ComponentType} from 'react'
 export type RouteConfigItem = {
-  title: string,
+  title?: string,
   path: string,
-  disabled: boolean,
+  children?: ConfigsType
   component?: ComponentType,
-  children: RouteConfigs
+  showInMenu?: boolean,
   exact?: boolean,
   extend?: any
 }
 
-export type RouteConfigs = Array<RouteConfigItem>
+export type ConfigsType = Array<RouteConfigItem>
 
 export type PropsType = {
-  routes: RouteConfigs
+  routes: ConfigsType
 }
 
 export type BaseProps = {
